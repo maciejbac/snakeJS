@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gamedev Canvas Workshop</title>
+    <style>
+    	* { padding: 0; margin: 0; }
+    	canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    var x = 50;
+    var y = 50;
+    var ballSpeed = 0.5;
+    var initAngle = Math.PI;
+    var angle = initAngle;
+    var text = "y value: " + y;
+    ctx.font = "30px Arial";
+
+    function draw() {
+
+        text = "y value: " + y;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.arc(x, y, 10, 0, Math.PI*2);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+        ctx.fillText(text, 70, 70);
+  
+    }
+    
+    function move(){
+        x += Math.sin(angle) * ballSpeed;
+        y -= Math.cos(angle) * ballSpeed;
+
+        if(y > canvas.height){
+            angle = Math.PI * 4;
+        }
+        else if(y < 0){
+            angle = Math.PI;
+        }
+    }
+
+    function playGame(){
+        move();
+        draw();
+    }
+
+
+    /*
+    def add_vectors(angle1, length1, angle2, length2):
+    x = math.sin(angle1) * length1 + math.sin(angle2) * length2
+    y = math.cos(angle1) * length1 + math.cos(angle2) * length2
+
+    length = math.hypot(x, y)
+    angle = 0.5 * math.pi - math.atan2(y, x)
+    return angle, length
+    */
+
+    setInterval(playGame, 10); 
+    
+    document.addEventListener('keydown', function(event) {
+        switch (event.key) {
+    case "ArrowDown":
+            y = y + 10;
+        break;
+    case "ArrowUp":
+            y = y - 10;
+        break;
+    case "ArrowLeft":
+            x = x - 10;
+      break;
+    case "ArrowRight":
+            x = x + 10;
+      break;
+    default:
+      return;
+  }
+});
+
+</script>
+
+</body>
+</html>

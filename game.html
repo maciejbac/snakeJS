@@ -19,6 +19,7 @@
     var headY = 50;
     var snakeSpeed = 1;
     var angle = Math.PI;
+    var segCount = 75;
     ctx.font = "30px Arial";
 
     class Segment {
@@ -41,11 +42,11 @@
 
     function move(){
         head.x += Math.sin(angle) * snakeSpeed;
-        head.y -= Math.cos(angle) * snakeSpeed;
+        head.y -= Math.cos(angle) * snakeSpeed; 
     }
 
     function rules(){
-        if(headX < 0 || headY < 0 || headX > canvas.width || headY > canvas.height){
+        if(head.x < 0 || head.y < 0 || head.x > canvas.width || head.y > canvas.height){
             ctx.fillText("you lost", 100, 100);
         }
     }
@@ -53,15 +54,30 @@
     function playGame(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         move();
-        drawSegment(tail);
+
+
         drawSegment(head);
-        
+
+        for(let i = 0; i < segCount; i++){
+            drawSegment(segments[i]);
+        }
+
+
         head.lastPosX = head.x;
         head.lastPosY = head.y;
 
-        tail.x = head.lastPosX;
-        tail.y = head.lastPosY;
+        for(let i = 0; i < segCount; i++){
+            segments[i].lastPosX = segments[i].x;
+            segments[i].lastPosY = segments[i].y;     
+        }
 
+        segments[0].x = head.lastPosX;
+        segments[0].y = head.lastPosY;
+
+        for(let i = 1; i < segCount; i++){
+            segments[i].x = segments[i-1].lastPosX;
+            segments[i].y = segments[i-1].lastPosY;     
+        }
 
         rules();
     }
@@ -69,6 +85,13 @@
     function init(){
         head = new Segment(headX, headY);
         tail = new Segment(headX, headY);
+
+        segments = [];
+
+        for(let i = 0; i < segCount; i++){
+            segments[i] = new Segment(headX, headY);
+        }
+
     }
 
     init();

@@ -31,11 +31,11 @@
         lastPosY = 0;
     }
 
-    function drawSegment(seg) {
+    function drawSegment(seg, colour = "#0095DD") {
         ctx.beginPath();
         ctx.arc(seg.x, seg.y, 10, 0, Math.PI*2);
         ctx.stroke();
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = colour;
         ctx.fill();
         ctx.closePath();  
     }
@@ -51,22 +51,23 @@
         }
     }
 
+    function expandSnake(){
+        segments[segments.length] = new Segment(segments[segments.length - 1].x, segments[segments.length - 1].x);
+        segCount++;
+    }
+
     function playGame(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         move();
 
 
         drawSnake();
-        
-
         rules();
     }
 
     function drawSnake(){
-        drawSegment(head);
-
-        for(let i = 0; i < segCount; i++){
-            drawSegment(segments[i]);
+        for(let i = segCount; i > 0; i--){
+            drawSegment(segments[i-1]);
         }
 
         head.lastPosX = head.x;
@@ -84,11 +85,14 @@
             segments[i].x = segments[i-1].lastPosX;
             segments[i].y = segments[i-1].lastPosY;     
         }
+
+        drawSegment(head, "#000000");
+        drawSegment(food);
     }
 
     function init(){
         head = new Segment(headX, headY);
-        tail = new Segment(headX, headY);
+        food = new Segment(Math.floor((Math.random() * canvas.width)), Math.floor((Math.random() * canvas.height)));
 
         segments = [];
 

@@ -27,6 +27,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.beginPath();
         ctx.arc(x, y, 10, 0, Math.PI*2);
+        ctx.stroke();
         ctx.fillStyle = "#0095DD";
         ctx.fill();
         ctx.closePath();  
@@ -47,31 +48,8 @@
         move();
         drawSnake();
         rules();
-        //physics();
     }
 
-
-
-/*
-    function physics(){
-        returnVector = addVectors(angle, ballSpeed, Math,PI, 0.2);
-        angle = returnVector[0];
-        ballSpeed = returnVector[1];
-
-        x += Math.sin(angle) * ballSpeed;
-        y -= Math.cos(angle) * ballSpeed;
-    }
-
-    function addVectors(angle1, length1, angle2, length2){
-        x = Math.sin(angle1) * length1 + Math.sin(angle2) * length2;
-        y = Math.cos(angle1) * length1 + Math.cos(angle2) * length2;
-
-        returnLength = Math.hypot(x, y);
-        returnAngle = 0.5 * Math.PI - Math.atan2(x, y);
-
-        return [returnAngle, returnLength];
-    }
-*/
 
     setInterval(playGame, 10); 
     

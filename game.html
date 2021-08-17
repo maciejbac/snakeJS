@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
+    <title>Snake!</title>
     <style>
     	* { padding: 0; margin: 0; }
     	canvas { background: #eee; display: block; margin: 0 auto; }
@@ -17,9 +17,9 @@
     var ctx = canvas.getContext("2d");
     var headX = 50;
     var headY = 50;
-    var snakeSpeed = 1;
+    var snakeSpeed = 2.5;
     var angle = Math.PI;
-    var segCount = 75;
+    var segCount = 50;
     ctx.font = "30px Arial";
 
     class Segment {
@@ -56,12 +56,18 @@
         move();
 
 
+        drawSnake();
+        
+
+        rules();
+    }
+
+    function drawSnake(){
         drawSegment(head);
 
         for(let i = 0; i < segCount; i++){
             drawSegment(segments[i]);
         }
-
 
         head.lastPosX = head.x;
         head.lastPosY = head.y;
@@ -78,8 +84,6 @@
             segments[i].x = segments[i-1].lastPosX;
             segments[i].y = segments[i-1].lastPosY;     
         }
-
-        rules();
     }
 
     function init(){
@@ -95,7 +99,7 @@
     }
 
     init();
-    setInterval(playGame, 10); 
+    setInterval(playGame, 25); 
     
     document.addEventListener('keydown', function(event) {
         switch (event.key) {

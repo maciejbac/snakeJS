@@ -133,6 +133,9 @@
 
     function init(){
 
+        clearInterval(interval);
+        loss = false;
+
         headX = 50;
         headY = 50;
         snakeSpeed = 3;
@@ -148,7 +151,6 @@
         for(let i = 0; i < segCount; i++){
             segments[i] = new Segment(headX, headY);
         }
-
     }
 
     init();
@@ -177,10 +179,8 @@
                 }
             break;
             case "r":
-                clearInterval(interval);
                 init();
                 interval = setInterval(playGame, 25);
-                loss = false;
             break;
         default:
     return;

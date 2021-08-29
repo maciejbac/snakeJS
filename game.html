@@ -132,6 +132,14 @@
     }
 
     function init(){
+
+        headX = 50;
+        headY = 50;
+        snakeSpeed = 3;
+        angle = Math.PI;
+        segCount = 1;
+        score = 0;
+
         head = new Segment(headX, headY);
         food = new Segment(Math.floor((Math.random() * canvas.width-50)+50), Math.floor((Math.random() * canvas.height-50)+50));
 
@@ -167,6 +175,12 @@
                 if(angle != Math.PI * 1.5){
                     angle = Math.PI / 2;
                 }
+            break;
+            case "r":
+                clearInterval(interval);
+                init();
+                interval = setInterval(playGame, 25);
+                loss = false;
             break;
         default:
     return;

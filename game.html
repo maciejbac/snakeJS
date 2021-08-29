@@ -25,21 +25,8 @@
     var score = 0;
     ctx.font = "30px Arial";
     var loss = false;
-
-
-    function playGame(){
-        move();
-        rules();
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        drawSnake();
-
-        if(loss){
-            ctx.fillText("Game Over! Score: " + score, 100, canvas.height/2);
-            clearInterval(interval);
-        }
-
-    }
-
+    
+    //Define the segment class used to build the snake
     class Segment {
         constructor(x, y, lastPosX = 0, lastPosY = 0){
             this.x = x;
@@ -47,6 +34,24 @@
         }
         lastPosX = 0;
         lastPosY = 0;
+    }
+
+    // Main game loop
+    function playGame(){
+        //update the board and check for loss conditions
+        move();
+        rules();
+        //clear the board to remove last frame
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        //draw next frame
+        drawSnake();
+        
+        //display the end screen and stop the game once the loss conditions are met
+        if(loss){
+            ctx.fillText("Game Over! Score: " + score, 100, canvas.height/2);
+            clearInterval(interval);
+        }
+
     }
 
     function move(){

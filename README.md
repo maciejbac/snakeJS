@@ -47,53 +47,35 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`macko939`, `snakeJS`, `twitter_handle`, `email`, `snakeJS`, `Snake game made in Javascript`
-
-
 ### Built With
 
 * []() Javascript
 * []() Html
-* []()
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+Simply go to my website to try out the game:
+https://macbac.co.uk/game.html 
+
+You can also download the game.html file and run it in your browser locally.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+No Prerequisites
 
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/macko939/snakeJS.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+No installation required
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Use the arrow keys to control the snake. Steer the snake towards the red fruit to grow bigger!
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Press 'r' to restart the game.
 
 
 
@@ -101,7 +83,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Roadmap
 
 See the [open issues](https://github.com/macko939/snakeJS/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
@@ -116,45 +97,3 @@ Contributions are what make the open source community such an amazing place to l
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/macko939/snakeJS](https://github.com/macko939/snakeJS)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/macko939/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/macko939/snakeJS/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/macko939/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/macko939/snakeJS/network/members
-[stars-shield]: https://img.shields.io/github/stars/macko939/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/macko939/snakeJS/stargazers
-[issues-shield]: https://img.shields.io/github/issues/macko939/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/macko939/snakeJS/issues
-[license-shield]: https://img.shields.io/github/license/macko939/repo.svg?style=for-the-badge
-[license-url]: https://github.com/macko939/snakeJS/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/macko939

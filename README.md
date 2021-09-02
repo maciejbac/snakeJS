@@ -2,7 +2,7 @@
 <p align="center">
   <a href="https://github.com/macko939/snakeJS">  </a>
 
-  <h3 align="center">Snake JS</h3>
+  <h3 align="center">Snake JS<br><blockquote class="imgur-embed-pub" lang="en" data-id="d9DVwNJ"><a href="https://imgur.com/d9DVwNJ">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></h3>
 
   <p align="center">
     Javascript practice project

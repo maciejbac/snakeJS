@@ -1,4 +1,4 @@
-[![Issues][issues-shield]][https://github.com/macko939/snakeJS/issues]
+[![Issues][issues-shield]][macko939/snakeJS/issues]
 
 
 <!-- PROJECT LOGO -->

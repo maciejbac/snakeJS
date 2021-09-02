@@ -3,7 +3,7 @@
   <a href="https://github.com/macko939/snakeJS">  </a>
 
   <h3 align="center">Snake JS</h3>
-  <img src="https://i.imgur.com/d9DVwNJ.png" alt="Snake" class="center">
+   <p align="center"><img src="https://i.imgur.com/d9DVwNJ.png" alt="Snake" class="center"></p>
 
   <p align="center">
     Javascript practice project

@@ -1,7 +1,3 @@
-[![Issues][issues-shield]][macko939/snakeJS/issues]
-
-
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/macko939/snakeJS">  </a>

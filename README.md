@@ -2,7 +2,8 @@
 <p align="center">
   <a href="https://github.com/macko939/snakeJS">  </a>
 
-  <h3 align="center">Snake JS<br><<a href="https://imgur.com/d9DVwNJ">View post on imgur.com</a></h3>
+  <h3 align="center">Snake JS</h3>
+  <img src="https://i.imgur.com/d9DVwNJ.png" alt="Snake">
 
   <p align="center">
     Javascript practice project

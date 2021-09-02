@@ -2,19 +2,19 @@
 <p align="center">
   <a href="https://github.com/macko939/snakeJS">  </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Snake JS</h3>
 
   <p align="center">
-    project_description
+    Javascript practice project
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/macko939/snakeJS"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://macbac.co.uk/game.html">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/macko939/snakeJS/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/macko939/snakeJS/issues">Request Feature</a>
   </p>
 </p>
 

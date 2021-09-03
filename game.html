@@ -13,8 +13,11 @@
 <canvas id="myCanvas" width="480" height="320"></canvas>
 
 <script>
+    // Initiate the canvas object 
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
+    
+    // Configure initial values for the snake
     var headX = 50;
     var headY = 50;
     var snakeSpeed = 3;

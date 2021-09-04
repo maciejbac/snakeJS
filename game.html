@@ -29,7 +29,7 @@
     ctx.font = "30px Arial";
     var loss = false;
     
-    //Define the segment class used to build the snake
+    // Define the segment class used to build the snake
     class Segment {
         constructor(x, y, lastPosX = 0, lastPosY = 0){
             this.x = x;
@@ -41,16 +41,16 @@
 
     // Main game loop
     function playGame(){
-        //update the board and check for loss conditions
+        // Update the board and check for loss conditions
         move();
         // Check if the loss conditions were met
         rules();
-        //clear the board to remove last frame
+        // Clear the board to remove last frame
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        //draw next frame
+        // Draw next frame
         drawSnake();
         
-        //display the end screen and stop the game once the loss conditions are met
+        // Display the end screen and stop the game once the loss conditions are met
         if(loss){
             ctx.fillText("Game Over! Score: " + score, 100, canvas.height/2);
             // Clear the interval to stop the game loop from running 

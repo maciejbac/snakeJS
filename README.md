@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/macko939/snakeJS">  </a>
+  <a href="https://github.com/maciejbac/snakeJS">  </a>
 
   <h3 align="center">Snake JS</h3>
    <p align="center"><img src="https://i.imgur.com/d9DVwNJ.png" alt="Snake" class="center"></p>
@@ -8,14 +8,14 @@
   <p align="center">
     Javascript practice project
     <br />
-    <a href="https://github.com/macko939/snakeJS"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/maciejbac/snakeJS"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://macbac.co.uk/game.html">View Demo</a>
     ·
-    <a href="https://github.com/macko939/snakeJS/issues">Report Bug</a>
+    <a href="https://github.com/maciejbac/snakeJS/issues">Report Bug</a>
     ·
-    <a href="https://github.com/macko939/snakeJS/issues">Request Feature</a>
+    <a href="https://github.com/maciejbac/snakeJS/issues">Request Feature</a>
   </p>
 </p>
 

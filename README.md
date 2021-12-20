@@ -1,7 +1,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/maciejbac/snakeJS">  </a>
-
   <h3 align="center">Snake JS</h3>
    <p align="center"><img src="https://i.imgur.com/d9DVwNJ.png" alt="Snake" class="center"></p>
 
